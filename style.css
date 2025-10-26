@@ -35,3 +35,93 @@ ol{
 a{
     text-align: center;
 }
+
+.menu{
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: pink;
+}
+
+.nav .navMenu{
+    text-decoration: none;
+}
+
+.nav .navMenu:hover{
+    background-color: violet;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.profileBody{
+    margin: 0;
+    background-color: white;
+}
+
+.profileCard{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.left {
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.left img {
+  width: 60%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  border: 0px;
+  box-shadow: 0px 5px 10px grey;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.left img:hover{
+    background-color: darksalmon;
+    transform: scale(1.1);
+}
+
+.info p, .info li {
+  font-size: 14px;
+  color: #444;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Right Section */
+.right {
+  width: 70%;
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+.specialty {
+  color: #888;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.summary {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  flex: 1;
+}
+
+.summary h4 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #444;
+  font-weight: bold;
+}
