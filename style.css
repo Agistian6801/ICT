@@ -36,10 +36,6 @@ a{
     text-align: center;
 }
 
-.menu{
-    text-align: center;
-}
-
 .nav{
     display: flex;
     align-items: center;
@@ -59,6 +55,106 @@ a{
     box-shadow: 2px 2px 5px grey;
 }
 
+/* Card */
+.productcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.productcontainer .prod{
+    width: 20%;
+    height: fit-content;
+    padding: 20px 20px;
+    margin: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: violet;
+    /*
+    transition: 0.3s ease; (img zoom ketika hover)
+    overflow: hidden;
+    z-index: 1; (below the header's index*)
+    */
+}
+
+.productcontainer .prod img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 5px 5px 5px grey;
+    /* transition: 0.9s ease; */
+}
+
+.productcontainer .prod:hover{
+    box-shadow: 0px 0px 15px grey;
+}
+
+/* .productcontainer .prod img:hover{
+    transform: scale(1.2);
+} */
+
+.productcontainer .prod .pro-desc{
+    margin-top: 5%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.productcontainer .prod .pro-desc .name{
+    background-color: rgb(255, 203, 255);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* carousel */
+.carousel{
+    margin: 20px auto;
+    width: 90%;
+    /* border: 5px solid red; */
+    display: flex;
+    overflow-x: auto; /*Masking*/
+    gap: 1em;
+}
+
+/* Remove the scrollbar  */
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 20s infinite linear;
+}
+
+.card{
+    flex: 0 0 5em; /*To make the card wider to the side */
+    height: 5em;
+    padding: 1em;
+    background-color: cornflowerblue;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+@keyframes spin{
+    from{translate: 0;}
+    to{translate: -100%;}
+}
+
+/* Profile pages */
 .profileBody{
     margin: 0;
     background-color: white;
@@ -117,6 +213,7 @@ a{
   border-radius: 10px;
   padding: 15px;
   flex: 1;
+  cursor: pointer;
 }
 
 .summary h4 {
@@ -124,4 +221,9 @@ a{
   font-size: 13px;
   color: #444;
   font-weight: bold;
+}
+
+.summary:hover{
+  background-color: violet;
+  transition: 0.5s ease;
 }
