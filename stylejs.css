@@ -1,0 +1,68 @@
+/* === Gaya Umum === */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 40px 30px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* === Tombol Mode === */
+.theme-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background-color: #0056b3;
+}
+
+/* === Mode Gelap === */
+.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .theme-btn {
+  background-color: #f5c518;
+  color: #222;
+}
+
+.dark-mode .theme-btn:hover {
+  background-color: #d8aa00;
+}
